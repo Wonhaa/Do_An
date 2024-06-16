@@ -38,19 +38,19 @@ class CategoryController extends FrontendController
                 $products->where('pro_price','<=', 50000);
             }
             if ($price == 2) {
-                $products->where('pro_price','>', 50000)
+                $products->where('pro_price','>', 0)
                 ->where('pro_price','<=', 100000);
             }
             if ($price == 3) {
-                $products->where('pro_price','>', 100000)
+                $products->where('pro_price','>', 0)
                 ->where('pro_price','<=', 200000);;
             }
             if ($price == 4) {
-                $products->where('pro_price','>', 200000)
+                $products->where('pro_price','>', 0)
                 ->where('pro_price','<=', 300000);
             }
             if ($price == 5) {
-                $products->where('pro_price','>', 300000)
+                $products->where('pro_price','>', 0)
                 ->where('pro_price','<=', 500000);
             }
             if ($price == 6) {
